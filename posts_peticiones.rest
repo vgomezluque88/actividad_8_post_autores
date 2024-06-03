@@ -1,0 +1,25 @@
+@PORT = 3000
+
+@HOST = http://localhost:{{PORT}}
+
+GET {{HOST}}/api/posts
+Authorization: API-KEY
+
+
+###
+GET {{HOST}}/api/posts/1
+Authorization: API-KEY
+
+###
+POST {{HOST}}/api/posts
+Authorization: API-KEY
+Content-Type: application/json
+
+{
+    "titulo":"hola",
+    "descripcion":"lorem Ipsum",
+    "fecha_creacion": "2024-12-12",
+    "categoria":"hola",
+    "autor_id":2
+}
+
